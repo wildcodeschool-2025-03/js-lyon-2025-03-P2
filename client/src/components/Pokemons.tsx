@@ -40,19 +40,19 @@ const pokemonGen1 = [
   },
 ];
 
-function PokemonGen1() {
+function Pokemons() {
   return (
-    <div>
+    <section>
       <h1>Pokémon Generation 1</h1>
       {pokemonGen1.map((pokemon) => (
-        <div key={pokemon.id}>
+        <section key={pokemon.id}>
           <h2>{pokemon.name}</h2>
           <p>Type: {pokemon.type}</p>
           <img src={pokemon.image} alt={pokemon.name} />
-        </div>
+        </section>
       ))}
-    </div>
+    </section>
   );
 }
 
-export default PokemonGen1;
+export default Pokemons;

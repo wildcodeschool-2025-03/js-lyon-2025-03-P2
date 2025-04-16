@@ -1,5 +1,5 @@
-import PokemonGen1 from "./components/PokemonGen1";
+import Pokemons from "./components/Pokemons";
 
 export default function App() {
-  return <PokemonGen1 />;
+  return <Pokemons />;
 }
