@@ -23,17 +23,20 @@ import Home from "./pages/Home";
 const router = createBrowserRouter([
   {
     path: "/", // The root path
-    element: <App />, // Renders the App component for the home page
-  },
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/Pokemons",
-    element: <Pokemons />,
-  },
-  // Try adding a new route! For example, "/about" with an About component
+    element: <App />,
+    children: [
+      // Renders the App component for the home page
+
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/Pokemons",
+        element: <Pokemons />,
+      },
+    ],
+  }, // Try adding a new route! For example, "/about" with an About component
 ]);
 
 /* ************************************************************************* */
