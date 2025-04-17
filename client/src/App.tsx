@@ -1,12 +1,12 @@
 import "./App.css";
-import Pokemons from "./components/Pokemons";
-import Home from "./pages/Home.tsx";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
-      <Pokemons />
-      <Home />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
