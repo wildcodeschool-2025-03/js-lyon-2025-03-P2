@@ -10,6 +10,8 @@ import App from "./App";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
+import Pokemons from "./components/Pokemons";
+import Home from "./pages/Home";
 
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
@@ -20,10 +22,20 @@ import App from "./App";
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
   {
-    path: "/", // The root path
-    element: <App />, // Renders the App component for the home page
-  },
-  // Try adding a new route! For example, "/about" with an About component
+    element: <App />,
+    children: [
+      // Renders the App component for the home page
+
+      {
+        path: "/", // The root path
+        element: <Home />,
+      },
+      {
+        path: "/pokemons",
+        element: <Pokemons />,
+      },
+    ],
+  }, // Try adding a new route! For example, "/about" with an About component
 ]);
 
 /* ************************************************************************* */
