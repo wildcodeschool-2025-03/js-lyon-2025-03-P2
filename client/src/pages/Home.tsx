@@ -17,7 +17,7 @@ function Home() {
       </p>
       <figure>
         <img
-          src="./src/assets/images/Kanto-(G1.1).png"
+          src="./src/assets/images/regionsMap/KantoG1.1.png"
           alt=""
           width={250}
           height={250}
@@ -29,7 +29,7 @@ function Home() {
 
       <figure>
         <img
-          src="./src/assets/images/Jhoto-(G2).jpg"
+          src="./src/assets/images/regionsMap/JhotoG2.jpg"
           alt=""
           width={250}
           height={250}
@@ -40,7 +40,7 @@ function Home() {
       </figure>
       <figure>
         <img
-          src="./src/assets/images/Hoenn-(G3).png"
+          src="./src/assets/images/regionsMap/HoennG3.png"
           alt=""
           width={250}
           height={250}
@@ -51,7 +51,7 @@ function Home() {
       </figure>
       <figure>
         <img
-          src="./src/assets/images/Sinnoh-(G4.1).png"
+          src="./src/assets/images/regionsMap/SinnohG4.1.png"
           alt=""
           width={250}
           height={250}
@@ -62,7 +62,7 @@ function Home() {
       </figure>
       <figure>
         <img
-          src="./src/assets/images/Unys-(G5).png"
+          src="./src/assets/images/regionsMap/UnysG5.png"
           alt=""
           width={250}
           height={250}
@@ -73,7 +73,7 @@ function Home() {
       </figure>
       <figure>
         <img
-          src="./src/assets/images/Kalos-(G6).png"
+          src="./src/assets/images/regionsMap/KalosG6.png"
           alt=""
           width={250}
           height={250}
@@ -84,7 +84,7 @@ function Home() {
       </figure>
       <figure>
         <img
-          src="./src/assets/images/Alola-(G7).png"
+          src="./src/assets/images/regionsMap/AlolaG7.png"
           alt=""
           width={250}
           height={250}
@@ -95,7 +95,7 @@ function Home() {
       </figure>
       <figure>
         <img
-          src="./src/assets/images/Galar-(G8).png"
+          src="./src/assets/images/regionsMap/GalarG8.png"
           alt=""
           width={250}
           height={250}
@@ -106,7 +106,7 @@ function Home() {
       </figure>
       <figure>
         <img
-          src="./src/assets/images/Paldea-(G9).png"
+          src="./src/assets/images/regionsMap/PaldeaG9.png"
           alt=""
           width={250}
           height={250}
