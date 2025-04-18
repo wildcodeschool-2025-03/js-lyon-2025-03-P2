@@ -22,13 +22,12 @@ import Home from "./pages/Home";
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
   {
-    path: "/", // The root path
     element: <App />,
     children: [
       // Renders the App component for the home page
 
       {
-        path: "/",
+        path: "/", // The root path
         element: <Home />,
       },
       {
