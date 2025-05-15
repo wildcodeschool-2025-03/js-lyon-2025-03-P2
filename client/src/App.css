@@ -14,42 +14,41 @@ body {
   background-color: #fdfdfd;
   color: #1d2c5e;
 }
-/* header v2 */
+
 header {
+  background-color: #fdfdfd;
+  height: 200px;
+  width: 100vw;
+  border-bottom: #f00 .25px solid;
   position: sticky;
   top: 0;
-  background-color: #fdfdfd;
-  border-bottom: #f00 .25px solid;
-  height: 130px;
-  width: 100vw;
 }
 
 a {
-  width: fit-content;
   text-decoration: none;
   color: #333;
 }
 
-header > section > .section-menu-burger {
+header > .burger-logo-search {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 160px;
+}
+header > section > .section-menu-burger {
+  display: flex;
+  justify-content: space-between;
   align-content: center;
-  height: 100px;
 }
-/* Need to adjust the path to target the (only ".logo" seem to work)  header v2*/
+/* Need to adjust the path to target the (only ".logo" seem to work)  */
 .logo {
-  height: 100px;
+  height: 16vh;
+  width: auto;
 }
-
 header > section > section > .menu-burger {
   width: 48px;
 }
-
-/* header v2 */
 header > section > .search-bar {
-  position: absolute;
-  top: 20px;
-  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +56,7 @@ header > section > .search-bar {
 }
 header > section > .search-bar > input {
   height: 30px;
-
+  width: 230px;
   outline: none;
   margin: 10px 0;
   background-color: #3466af;
@@ -101,10 +100,52 @@ header > nav {
   gap: 2rem;
 }
 
+.Generation-numbers {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.input-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 230px;
+  margin: 0 1vw;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fdfdfd;
+  border-left: 1px solid #fdfdfd;
+  border-radius: 5px;
+  background-color: #ff4444;
+  color: #fdfdfd;
+  &::placeholder {
+    color: #ffaaaa;
+    text-align: center;
+  }
+}
+
+.btn-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  margin: 0 1vw;
+  outline: none;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+}
+
 .map-pokemon {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
   align-content: center;
   width: 100vw;
@@ -117,7 +158,10 @@ header > nav {
   }
 }
 .regionImg {
-  width: 100%;
+  object-fit: cover;
+  width: 600px;
+  height: 400px;
+  margin: 20px;
 }
 
 .title-map {
@@ -128,7 +172,31 @@ header > nav {
   font-size: 120%;
   width: 100vw;
   text-align: center;
-  margin: 50px 0;
+  margin-top: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff0000;
+  height: 150px;
+}
+footer > .social-legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* accessibility us22 */
+.legal > p {
+  color: black;
+}
+.subscribe > label {
+  color: black;
+}
+.search-bar > button {
+  background-color: #3466af;
 }
 
 .wildex-logo-title {
@@ -136,6 +204,68 @@ header > nav {
   flex-direction: column;
 }
 /* accessibility us22  */
+footer > section > .legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fdfdfd;
+}
+footer > section > .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #ff0000;
+}
+.social > a > .social-icon {
+  height: 30px;
+  width: 30px;
+  margin: 0 1vw;
+}
+
+footer > .subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1vw;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  header > section > section > .logo {
+    height: 80px;
+    width: auto;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    padding: 10px 0;
+  }
+  footer > .social-legal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .social {
+    margin: 20px 0;
+  }
+  .legal {
+    margin: 20px 0;
+
+    color: #fdfdfd;
+  }
+}
 
 @media screen and (max-width: 576px) {
   header > .burger-logo-search {
@@ -149,8 +279,10 @@ header > nav {
       & > .menu-burger {
         margin: 10vh 0 0 0;
       }
+      & > .logo {
+        margin: 10vh 5vw 0 0;
+      }
     }
-
     header > nav {
       display: none;
       background-color: #f00;
@@ -159,20 +291,4 @@ header > nav {
   header > section > .search-bar {
     display: none;
   }
-  header {
-    height: 130px;
-    background-color: #fdfdfd;
-  }
-}
-@media screen and (max-width: 378px) {
-  .logo {
-    height: 65px;
-  }
-}
-
-/* Style types */
-.pkmTypes {
-  padding: 0 4px;
-  margin-right: 3px;
-  border-radius: 4px;
 }
